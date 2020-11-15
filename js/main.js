@@ -2,7 +2,21 @@ window.addEventListener('load', function(e){
     // console.log(e)
     const tagFilter = document.querySelector('#filter')
     const photoArray = document.querySelectorAll('.tags')
+    const resetButton = document.querySelector('.reset')
         // console.log(photoArray)
+        // console.log(resetButton)
+
+        resetButton.addEventListener('click', onNewFilter)
+
+        function onNewFilter(e){
+            const newFilter = tagFilter.value.trim();
+
+            if(newTagFilter !== ""){
+
+            }else{
+
+            }
+        } //END OF EVENT HANDLER
 
         tagFilter.addEventListener('input', onSearchPhotos)
 
