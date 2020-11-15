@@ -42,7 +42,7 @@ window.addEventListener('load', function(e){
             }) // END OF SEARCHING
                 
             function resetDisplay(){
-                photoArray.forEach(function(photo){
+                photoArray.forEach(function(photo, index){
 
                     if(photo.classList.contains('thumb-display hidden')){
                         photo.classList.remove('thumb-display hidden')
